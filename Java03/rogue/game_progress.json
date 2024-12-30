@@ -1,0 +1,264 @@
+{
+  "characters": [
+    {
+      "position": {
+        "x": 66,
+        "y": 17
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 4,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 1,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 7,
+      "endTime": "2024-12-27--13:55:48",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 64,
+        "y": 3
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 0,
+      "endTime": "2024-12-27--13:56:08",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 12,
+        "y": 4
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 3,
+      "endTime": "2024-12-27--13:56:17",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 43,
+        "y": 16
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 1,
+      "endTime": "2024-12-27--13:57:49",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 64,
+        "y": 16
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 1,
+      "endTime": "2024-12-27--14:00:09",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 12,
+        "y": 10
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 1,
+      "endTime": "2024-12-27--14:00:16",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 33,
+        "y": 5
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 21,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 22,
+      "endTime": "2024-12-27--14:05:18",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 15,
+        "y": 9
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 0,
+      "endTime": "2024-12-27--14:05:26",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 63,
+        "y": 3
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 2,
+      "endTime": "2024-12-27--14:06:56",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 31,
+        "y": 9
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 21,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 15,
+      "endTime": "2024-12-27--14:07:18",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 29,
+        "y": 11
+      },
+      "maxHealth": 20,
+      "health": 20,
+      "agility": 3,
+      "strength": 2,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 0,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 0,
+      "enemiesAttackCounter": 0,
+      "boxCounter": 0,
+      "endTime": "2024-12-28--14:06:27",
+      "endLevel": 1
+    },
+    {
+      "position": {
+        "x": 61,
+        "y": 17
+      },
+      "maxHealth": 30,
+      "health": 30,
+      "agility": 2,
+      "strength": 5,
+      "gold": 0,
+      "sleep": false,
+      "defeatedEnemiesCounter": 1,
+      "eatenFoodCounter": 1,
+      "drunkElixirCounter": 2,
+      "attackCounter": 1,
+      "enemiesAttackCounter": 4,
+      "boxCounter": 312,
+      "endTime": "2024-12-28--14:10:50",
+      "endLevel": 2
+    },
+    {
+      "position": {
+        "x": 35,
+        "y": 2
+      },
+      "maxHealth": 24,
+      "health": 0,
+      "agility": 3,
+      "strength": 4,
+      "gold": 131,
+      "sleep": false,
+      "defeatedEnemiesCounter": 2,
+      "eatenFoodCounter": 0,
+      "drunkElixirCounter": 0,
+      "attackCounter": 4,
+      "enemiesAttackCounter": 6,
+      "boxCounter": 92,
+      "endTime": "2024-12-28--15:09:31",
+      "endLevel": 2
+    }
+  ]
+}
