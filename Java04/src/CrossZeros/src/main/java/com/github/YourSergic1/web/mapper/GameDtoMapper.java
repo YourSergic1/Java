@@ -1,37 +1,15 @@
 package com.github.YourSergic1.web.mapper;
 
-import com.github.YourSergic1.domain.model.CurrentGame;
-import com.github.YourSergic1.domain.model.Field;
-import com.github.YourSergic1.web.model.CurrentGameDto;
-import com.github.YourSergic1.web.model.FieldDto;
+import com.github.YourSergic1.domain.model.Game;
+import com.github.YourSergic1.web.model.GameDto;
 
 public class GameDtoMapper {
 
-    public static FieldDto toDto(Field field) {
-        FieldDto fieldDto = new FieldDto();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                fieldDto.getField()[i][j] = field.getBoard()[i][j];
-            }
-        }
-        return fieldDto;
+    public static GameDto toDto(Game game) {
+        return new GameDto(FieldDtoMapper.toDto(game.getField()), game.getId(), game.getPlayer1Figure(), game.getPlayer2Figure(), game.getUser1(), game.getUser2(), game.isGameWithHuman());
     }
 
-    public static Field toField(FieldDto fieldDto) {
-        Field field = new Field();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                field.getBoard()[i][j] = fieldDto.getField()[i][j];
-            }
-        }
-        return field;
-    }
-
-    public static CurrentGameDto toDto(CurrentGame currentGame) {
-        return new CurrentGameDto(currentGame.getId(), toDto(currentGame.getField()));
-    }
-
-    public static CurrentGame toCurrentGame(CurrentGameDto currentGameDto) {
-        return new CurrentGame(currentGameDto.getId(), toField(currentGameDto.getField()));
+    public static Game toCurrentGame(GameDto gameDto) {
+        return new Game(gameDto.getId(), FieldDtoMapper.toField(gameDto.getField()), gameDto.getPlayer(), gameDto.getComputer(), gameDto.getUser1(), gameDto.getUser2(), gameDto.isGameWithHuman());
     }
 }

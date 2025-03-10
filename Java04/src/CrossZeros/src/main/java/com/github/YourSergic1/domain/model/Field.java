@@ -1,7 +1,13 @@
 package com.github.YourSergic1.domain.model;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.experimental.FieldDefaults;
+
+@Getter
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class Field {
-    private int[][] board;
+    final int[][] board;
 
     public Field() {
         this.board = new int[3][3];
@@ -10,9 +16,5 @@ public class Field {
                 this.board[i][j] = -1;
             }
         }
-    }
-
-    public int[][] getBoard() {
-        return board;
     }
 }

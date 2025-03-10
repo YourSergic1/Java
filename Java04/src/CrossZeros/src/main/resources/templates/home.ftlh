@@ -20,7 +20,7 @@
 
     .wrapper {
         position: relative;
-        background-image: url("../images/bcg.jpg");
+        background-image: url('/images/bcg.jpg');
         background-size: cover; /* Фон растягивается, сохраняя пропорции */
         background-position: center; /* Центрируем фон */
         background-repeat: no-repeat; /* Фон не будет повторяться */
@@ -64,10 +64,7 @@
         line-height: 1.5;
     }
 
-    .start {
-        position: absolute;
-        top: 79%; /* Центрируем текст по вертикали */
-        left: 48%; /* Центрируем текст по горизонтали */
+    button {
         transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
         text-align: center;
         z-index: 2;
@@ -80,10 +77,23 @@
         transition: 0.3s; /* Плавный переход */
     }
 
-    .start:hover {
+    button:hover {
         background: white; /* Белый фон при наведении */
         color: black; /* Черный текст при наведении */
     }
+
+    .registration {
+        position: absolute;
+        top: 82%; /* Центрируем текст по вертикали */
+        left: 48%;
+    }
+
+    .logIn {
+        position: absolute;
+        top: 73%; /* Центрируем текст по вертикали */
+        left: 48%; /* Центрируем текст по горизонтали */
+    }
+
 </style>
 <body>
 <div class="wrapper">
@@ -93,9 +103,12 @@
         (X) или нолик (O). Цель игры — первым выстроить линию из трех своих знаков по горизонтали, вертикали или
         диагонали. Если все клетки поля заполнены, но ни один из игроков не смог создать линию, игра заканчивается
         ничьей.</h2>
-    <form action="/" method="post">
-        <button type="submit" class="start">Let's go!</button>
-    </form>
+    <a href="/registration">
+        <button type="submit" class="registration">Зарегистрироваться</button>
+    </a>
+    <a href="/authentication">
+        <button type="submit" class="logIn">Войти</button>
+    </a>
 </div>
 </body>
 </html>

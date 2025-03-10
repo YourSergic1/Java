@@ -1,13 +1,25 @@
 package com.github.YourSergic1.datasource.model;
 
+import jakarta.persistence.*;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.FieldDefaults;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
+@NoArgsConstructor
+@Table(name = "field_entity")
+@Getter
+@Setter
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class FieldEntity {
-    private int[][] board;
-
-    public FieldEntity() {
-        this.board = new int[3][3];
-    }
-
-    public int[][] getField() {
-        return board;
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    long id;
+    @ElementCollection
+    List<Integer> board = new ArrayList<>(9);
 }

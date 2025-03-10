@@ -1,37 +1,26 @@
 package com.github.YourSergic1.datasource.mapper;
 
-import com.github.YourSergic1.datasource.model.CurrentGameEntity;
-import com.github.YourSergic1.datasource.model.FieldEntity;
-import com.github.YourSergic1.domain.model.CurrentGame;
-import com.github.YourSergic1.domain.model.Field;
+import com.github.YourSergic1.datasource.model.GameEntity;
+import com.github.YourSergic1.domain.model.Game;
+
+import static com.github.YourSergic1.datasource.mapper.FieldEntityMapper.EntityToField;
+import static com.github.YourSergic1.datasource.mapper.FieldEntityMapper.FieldToEntity;
 
 public class GameEntityMapper {
 
-    public static FieldEntity FieldToEntity(Field field) {
-        FieldEntity fieldEntity = new FieldEntity();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                fieldEntity.getField()[i][j] = field.getBoard()[i][j];
-            }
-        }
-        return fieldEntity;
+    public static GameEntity GameToEntity(Game game) {
+        GameEntity gameEntity = new GameEntity();
+        gameEntity.setId(game.getId());
+        gameEntity.setField(FieldToEntity(game.getField()));
+        gameEntity.setUser1Figure(game.getPlayer1Figure());
+        gameEntity.setUser2Figure(game.getPlayer2Figure());
+        gameEntity.setUser2(game.getUser2());
+        gameEntity.setUser1(game.getUser1());
+        gameEntity.setGameWithHuman(game.isGameWithHuman());
+        return gameEntity;
     }
 
-    public static Field EntityToField(FieldEntity fieldEntity) {
-        Field field = new Field();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                field.getBoard()[i][j] = fieldEntity.getField()[i][j];
-            }
-        }
-        return field;
-    }
-
-    public static CurrentGameEntity GameToEntity(CurrentGame game) {
-        return new CurrentGameEntity(game.getId(), FieldToEntity(game.getField()));
-    }
-
-    public static CurrentGame EntityToGame(CurrentGameEntity gameEntity) {
-        return new CurrentGame(gameEntity.getId(), EntityToField(gameEntity.getField()));
+    public static Game EntityToGame(GameEntity gameEntity) {
+        return new Game(gameEntity.getId(), EntityToField(gameEntity.getField()), gameEntity.getUser2Figure(), gameEntity.getUser1Figure(), gameEntity.getUser1(), gameEntity.getUser2(), gameEntity.isGameWithHuman());
     }
 }
