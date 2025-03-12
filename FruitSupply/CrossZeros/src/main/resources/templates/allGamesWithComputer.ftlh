@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Игры с компьютером</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'TildaSans', Arial, sans-serif;
+            background-color: rgb(74, 58, 0);
+        }
+
+        h1 {
+            font-weight: 300;
+            position: absolute;
+            top: 5%; /* Центрируем текст по вертикали */
+            left: 50%; /* Центрируем текст по горизонтали */
+            transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+            text-align: center;
+            color: white;
+            font-size: 2rem; /* Размер шрифта (по желанию) */
+            z-index: 2; /* Текст будет поверх затемняющего слоя */
+            width: 40%;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        table {
+            position: absolute;
+            top: 100px; /* Фиксированный отступ сверху в пикселях */
+            left: 50%; /* Центрируем по горизонтали */
+            transform: translateX(-50%); /* Сдвигаем на 50% по горизонтали для центрирования */
+            width: 80%;
+            border-collapse: collapse; /* Убирает двойные границы между ячейками */
+            color: white;
+            font-size: 1.5rem; /* Размер шрифта (по желанию) */
+            z-index: 2; /* Текст будет поверх затемняющего слоя */
+            line-height: 1.5;
+        }
+
+        th, td {
+            border: 1px solid white; /* Устанавливает белую границу */
+            padding: 8px; /* Отступы внутри ячеек */
+            text-align: center; /* Выравнивание текста по центру */
+        }
+
+
+        .back {
+            position: absolute;
+            top: 5%; /* Центрируем текст по вертикали */
+            left: 5%; /* Центрируем текст по горизонтали */
+            transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+            text-align: center;
+            z-index: 2;
+            color: white; /* Белый текст */
+            border: 2px solid white; /* Белая обводка */
+            background: transparent; /* Прозрачный фон */
+            padding: 10px 20px; /* Отступы */
+            font-size: 2rem; /* Размер текста */
+            cursor: pointer; /* Курсор в виде указателя */
+            transition: 0.3s; /* Плавный переход */
+        }
+
+    </style>
+</head>
+<body>
+<a href="/menu">
+    <button class="back">Назад</button>
+</a>
+<h1>Игры с компьютером</h1>
+
+<table>
+    <tr>
+        <th>Game ID</th>
+        <th>Status</th>
+    </tr>
+    <#list gameStatuses as key, value>
+        <tr>
+            <td>
+                <a href="/game/${key.id}" style="color: black;">${key.id}</a>
+            </td>
+            <#assign status = value>
+            <#if status?is_number>
+                <#if status == 10>
+                    <td style="color: red;">Проигрыш</td>
+                <#elseif status == -10>
+                    <td style="color: green;">Выигрыш</td>
+                <#elseif status == 0>
+                    <td style="color: dodgerblue;">Ничья</td>
+                <#else>
+                    <td style="color: white;">Игра идет</td>
+                </#if>
+            <#else>
+                Статус неизвестен
+            </#if>
+        </tr>
+    </#list>
+</table>
+</body>
+</html>
