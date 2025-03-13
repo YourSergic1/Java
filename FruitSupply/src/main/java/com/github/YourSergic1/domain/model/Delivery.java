@@ -16,5 +16,4 @@ public class Delivery {
     UUID id;
     Supplier supplier;
     LocalDate deliveryDate;
-    List<DeliveryProduct> products;
 }

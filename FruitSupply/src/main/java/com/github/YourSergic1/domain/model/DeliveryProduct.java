@@ -13,6 +13,7 @@ import java.util.UUID;
 public class DeliveryProduct {
     UUID id;
     Product product;
+    Delivery delivery;
     float price;
     float weight;
 }

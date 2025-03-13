@@ -21,6 +21,9 @@ public class DeliveryProductEntity {
     @ManyToOne
     @JoinColumn(name = "product_id", nullable = false)
     ProductEntity productEntity;
+    @ManyToOne
+    @JoinColumn(name = "delivery_id", nullable = false)  // Добавляем внешний ключ на сущность DeliveryEntity
+    DeliveryEntity delivery;
     float price;
     float weight;
 }

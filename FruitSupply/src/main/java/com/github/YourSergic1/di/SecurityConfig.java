@@ -16,7 +16,7 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable) // Отключаем CSRF
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/home", "/login","/addDelivery/*","/report").permitAll() // Доступ к этим страницам без авторизации
+                        .requestMatchers("/home", "/login","/addDelivery/*","/chooseInfoForReport","/chooseInfoForReport/report").permitAll() // Доступ к этим страницам без авторизации
                         .anyRequest().authenticated() // Все остальные страницы требуют аутентификацию
                 ).formLogin(form -> form
                         .loginPage("/authentication") // Указываем страницу входа

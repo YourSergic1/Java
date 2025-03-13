@@ -53,7 +53,7 @@
         <button type="submit" >Добавить поставку</button>
     </a>
     <label>Создать отчет за период</label>
-    <a href="/report">
+    <a href="/chooseInfoForReport">
         <button type="submit" >Создать отчет</button>
     </a>
     <label>Добавить поставщика</label>

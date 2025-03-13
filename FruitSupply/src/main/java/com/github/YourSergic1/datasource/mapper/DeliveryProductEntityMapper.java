@@ -8,6 +8,7 @@ public class DeliveryProductEntityMapper {
         DeliveryProductEntity deliveryProductEntity = new DeliveryProductEntity();
         deliveryProductEntity.setId(deliveryProduct.getId());
         deliveryProductEntity.setProductEntity(ProductEntityMapper.ModelToEntity(deliveryProduct.getProduct()));
+        deliveryProductEntity.setDelivery(DeliveryEntityMapper.ModelToEntity(deliveryProduct.getDelivery()));
         deliveryProductEntity.setPrice(deliveryProduct.getPrice());
         deliveryProductEntity.setWeight(deliveryProduct.getWeight());
         return deliveryProductEntity;
@@ -17,6 +18,7 @@ public class DeliveryProductEntityMapper {
         DeliveryProduct deliveryProduct = new DeliveryProduct();
         deliveryProduct.setId(deliveryProductEntity.getId());
         deliveryProduct.setProduct(ProductEntityMapper.EntityToModel(deliveryProductEntity.getProductEntity()));
+        deliveryProduct.setDelivery(DeliveryEntityMapper.EntityToModel(deliveryProductEntity.getDelivery()));
         deliveryProduct.setPrice(deliveryProductEntity.getPrice());
         deliveryProduct.setWeight(deliveryProductEntity.getWeight());
         return deliveryProduct;

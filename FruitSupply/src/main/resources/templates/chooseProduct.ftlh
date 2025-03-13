@@ -83,23 +83,37 @@
     <body>
     <div class="wrapper">
         <form action="/addDelivery/chooseProduct" method="post">
+            <input type="hidden" name="deliveryID" value="${deliveryID}">
             <label for="productName">Выберите продукт</label>
             <select id="productName" name="productName" >
                 <option value="" disabled selected>Выберите продукт</option>
                 <!-- Перебираем все компании и создаем элементы option -->
                 <#list products as product>
-                    <option value="${product.name}">${product.name}</option>
+                    <option value="${product.name}" data-id="${product.id}">${product.name}</option>
                 </#list>
             </select>
 
             <label for="productWeight">Введите вес продукта</label>
             <input type="number" id="productWeight" name="productWeight" placeholder="Вес продукта">
+            <button type="submit" name="action" value="addMore">Добавить еще</button>
 
-        <button type="submit">Сохранить</button>
+            <!-- Кнопка для сохранения -->
+            <button type="submit" name="action" value="save">Сохранить</button>
         </form>
-        <a href="/home">
-            <button type="submit" class="back">Назад</button>
-        </a>
+        <script>
+            // Добавляем обработчик события для формы
+            document.querySelector("form").addEventListener("submit", function (e) {
+                var selectedOption = document.querySelector("#productName").selectedOptions[0];
+                var productId = selectedOption.getAttribute("data-id"); // Получаем ID продукта из data-id
+
+                // Создаем скрытое поле для передачи productId
+                var hiddenInput = document.createElement("input");
+                hiddenInput.type = "hidden";
+                hiddenInput.name = "productId";  // Название параметра
+                hiddenInput.value = productId;   // Значение ID продукта
+                this.appendChild(hiddenInput);   // Добавляем скрытое поле в форму
+            });
+        </script>
     </div>
     </body>
     </html>

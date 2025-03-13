@@ -9,7 +9,6 @@ public class DeliveryDtoMapper {
         DeliveryDto deliveryDto = new DeliveryDto();
         deliveryDto.setId(delivery.getId());
         deliveryDto.setDeliveryDate(delivery.getDeliveryDate());
-        deliveryDto.setProducts(delivery.getProducts());
         deliveryDto.setSupplier(delivery.getSupplier());
         return deliveryDto;
     }
@@ -17,7 +16,6 @@ public class DeliveryDtoMapper {
         Delivery delivery = new Delivery();
         delivery.setId(deliveryDto.getId());
         delivery.setDeliveryDate(deliveryDto.getDeliveryDate());
-        delivery.setProducts(deliveryDto.getProducts());
         delivery.setSupplier(deliveryDto.getSupplier());
         return delivery;
     }

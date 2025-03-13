@@ -78,32 +78,32 @@
                 background-color: #007BFF; /* Цвет фона при наведении */
                 color: white; /* Цвет текста при наведении */
             }
-            input[type="date"] {
-                font-size: 1em; /* Размер текста в поле ввода */
-                padding: 10px;
-                margin: 10px 0; /* Отступы между полями ввода */
-                width: 80%; /* Ширина поля ввода */
-                border: 1px solid #ccc;
-                border-radius: 5px;
-            }
         </style>
     </head>
     <body>
     <div class="wrapper">
-        <form action="/addDelivery/chooseCompany" method="post">
-            <label for="companyName">Выберите компанию</label>
-            <select id="companyName" name="companyName" >
-                <option value="" disabled selected>Выберите компанию</option>
-                <!-- Перебираем все компании и создаем элементы option -->
-                <#list companies as company>
-                    <option value="${company.name}">${company.name}</option>
-                </#list>
-            </select>
-            <label for="date">Выберите дату</label>
-            <input type="date" id="date" name="date" required>
-
-        <button type="submit">Далее</button>
-        </form>
+        <label for="productWeight">Результат</label>
+        <label for="companyName">${res.companyName}</label>
+        <label for="dateEnd">${res.startDate}</label>
+        <label for="dateEnd">${res.endDate}</label>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Продукт</th>
+                <th>Вес</th>
+                <th>Цена</th>
+            </tr>
+            </thead>
+            <tbody>
+            <#list res.products as name, info>  <!-- Итерируем Map -->
+                <tr>
+                    <td>${name}</td>  <!-- Пример получения данных из Product -->
+                    <td>${info[0]}</td>  <!-- Пример получения данных из DeliveryProduct -->
+                    <td>${info[1]}</td>  <!-- Пример получения данных из DeliveryProduct -->
+                </tr>
+            </#list>
+            </tbody>
+        </table>
         <a href="/home">
             <button type="submit" class="back">Назад</button>
         </a>

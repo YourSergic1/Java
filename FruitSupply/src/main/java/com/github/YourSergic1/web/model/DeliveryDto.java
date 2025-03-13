@@ -18,5 +18,4 @@ public class DeliveryDto {
     UUID id;
     Supplier supplier;
     LocalDate deliveryDate;
-    List<DeliveryProduct> products;
 }

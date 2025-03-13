@@ -1,5 +1,6 @@
 package com.github.YourSergic1.web.model;
 
+import com.github.YourSergic1.domain.model.Delivery;
 import com.github.YourSergic1.domain.model.Product;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -14,6 +15,7 @@ import java.util.UUID;
 public class DeliveryProductDto {
     UUID id;
     Product product;
+    Delivery delivery;
     float price;
     float weight;
 }

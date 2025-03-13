@@ -25,7 +25,4 @@ public class DeliveryEntity {
     SupplierEntity supplier;
     @Column(nullable = false)
     LocalDate deliveryDate;
-    @OneToMany
-    @JoinColumn(name = "delivery_product_id", nullable = false)
-    List<DeliveryProductEntity> products;
 }

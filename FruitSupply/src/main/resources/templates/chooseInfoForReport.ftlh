@@ -90,7 +90,7 @@
     </head>
     <body>
     <div class="wrapper">
-        <form action="/addDelivery/chooseCompany" method="post">
+        <form action="/chooseInfoForReport" method="post">
             <label for="companyName">Выберите компанию</label>
             <select id="companyName" name="companyName" >
                 <option value="" disabled selected>Выберите компанию</option>
@@ -99,8 +99,11 @@
                     <option value="${company.name}">${company.name}</option>
                 </#list>
             </select>
-            <label for="date">Выберите дату</label>
-            <input type="date" id="date" name="date" required>
+            <label for="dateStart">Выберите начало диапазона</label>
+            <input type="date" id="dateStart" name="dateStart" required>
+
+            <label for="dateEnd">Выберите конец диапазона</label>
+            <input type="date" id="dateEnd" name="dateEnd" required>
 
         <button type="submit">Далее</button>
         </form>
