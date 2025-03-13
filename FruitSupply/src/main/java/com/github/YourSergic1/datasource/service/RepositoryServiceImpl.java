@@ -33,7 +33,7 @@ public class RepositoryServiceImpl implements RepositoryService {
     SupplierEntityRepository supplierEntityRepository;
 
     @Autowired
-    RepositoryServiceImpl(DeliveryProductRepository deliveryProductRepository,DeliveryRepository deliveryRepository,ProductEntityRepository productEntityRepository,SupplierEntityRepository supplierEntityRepository) {
+    RepositoryServiceImpl(DeliveryProductRepository deliveryProductRepository, DeliveryRepository deliveryRepository, ProductEntityRepository productEntityRepository, SupplierEntityRepository supplierEntityRepository) {
         this.deliveryProductRepository = deliveryProductRepository;
         this.deliveryRepository = deliveryRepository;
         this.productEntityRepository = productEntityRepository;
@@ -60,7 +60,7 @@ public class RepositoryServiceImpl implements RepositoryService {
 
     @Override
     public void addDeliveryProduct(DeliveryProduct deliveryProduct) {
-        DeliveryProductEntity deliveryProductEntity= DeliveryProductEntityMapper.modelToEntity(deliveryProduct);
+        DeliveryProductEntity deliveryProductEntity = DeliveryProductEntityMapper.modelToEntity(deliveryProduct);
         deliveryProductRepository.save(deliveryProductEntity);
     }
 
@@ -70,7 +70,7 @@ public class RepositoryServiceImpl implements RepositoryService {
     }
 
     @Override
-    public List<Supplier> getAllSupplies(){
+    public List<Supplier> getAllSupplies() {
         List<SupplierEntity> supplierEntities = supplierEntityRepository.findAll();
         List<Supplier> suppliers = new ArrayList<>();
         supplierEntities.forEach(supplierEntity -> suppliers.add(SupplierEntityMapper.EntityToModel(supplierEntity)));
@@ -79,19 +79,19 @@ public class RepositoryServiceImpl implements RepositoryService {
 
     @Override
     public Supplier getSupplier(String name) {
-        Optional<SupplierEntity> supplierEntity=supplierEntityRepository.findByName(name);
+        Optional<SupplierEntity> supplierEntity = supplierEntityRepository.findByName(name);
         return supplierEntity.map(SupplierEntityMapper::EntityToModel).orElse(null);
     }
 
     @Override
     public Supplier getSupplier(UUID id) {
-        Optional<SupplierEntity> supplierEntity=supplierEntityRepository.findById(id);
+        Optional<SupplierEntity> supplierEntity = supplierEntityRepository.findById(id);
         return supplierEntity.map(SupplierEntityMapper::EntityToModel).orElse(null);
     }
 
     @Override
     public List<Product> findProductsBySupplierId(UUID supplierId) {
-        List<ProductEntity> productEntityList=productEntityRepository.findBySupplierId(supplierId);
+        List<ProductEntity> productEntityList = productEntityRepository.findBySupplierId(supplierId);
         List<Product> productsList = new ArrayList<>();
         productEntityList.forEach(productEntity -> productsList.add(ProductEntityMapper.EntityToModel(productEntity)));
         return productsList;
@@ -99,7 +99,7 @@ public class RepositoryServiceImpl implements RepositoryService {
 
     @Override
     public Delivery getDeliveryById(UUID id) {
-        DeliveryEntity deliveryEntity= deliveryRepository.getDeliveryEntityById(id);
+        DeliveryEntity deliveryEntity = deliveryRepository.getDeliveryEntityById(id);
         return DeliveryEntityMapper.EntityToModel(deliveryEntity);
     }
 
@@ -110,7 +110,7 @@ public class RepositoryServiceImpl implements RepositoryService {
 
     @Override
     public List<DeliveryProduct> findDeliveryProductsByDeliveryAndProduct(Delivery delivery, Product product) {
-        List<DeliveryProductEntity> deliveryProductEntityList=deliveryProductRepository.findAllByDeliveryAndProductEntity(DeliveryEntityMapper.ModelToEntity(delivery),ProductEntityMapper.ModelToEntity(product));
+        List<DeliveryProductEntity> deliveryProductEntityList = deliveryProductRepository.findAllByDeliveryAndProductEntity(DeliveryEntityMapper.ModelToEntity(delivery), ProductEntityMapper.ModelToEntity(product));
         List<DeliveryProduct> deliveryProducts = new ArrayList<>();
         deliveryProductEntityList.forEach(deliveryProductEntity -> deliveryProducts.add(DeliveryProductEntityMapper.EntityToModel(deliveryProductEntity)));
         return deliveryProducts;
@@ -118,7 +118,7 @@ public class RepositoryServiceImpl implements RepositoryService {
 
     @Override
     public List<Delivery> deliveriesBetweenDatesAndBySupply(Supplier supplier, LocalDate from, LocalDate to) {
-        List<DeliveryEntity> deliveryEntities=deliveryRepository.getAllBySupplierAndDeliveryDateAfterAndDeliveryDateBefore(SupplierEntityMapper.ModelToEntity(supplier),from,to);
+        List<DeliveryEntity> deliveryEntities = deliveryRepository.getAllBySupplierAndDeliveryDateAfterAndDeliveryDateBefore(SupplierEntityMapper.ModelToEntity(supplier), from, to);
         List<Delivery> deliveryList = new ArrayList<>();
         deliveryEntities.forEach(deliveryEntity -> deliveryList.add(DeliveryEntityMapper.EntityToModel(deliveryEntity)));
         return deliveryList;
@@ -126,7 +126,7 @@ public class RepositoryServiceImpl implements RepositoryService {
 
     @Override
     public List<DeliveryProduct> findDeliveryProductsByDelivery(Delivery delivery) {
-        List<DeliveryProductEntity> deliveryProductEntityList=deliveryProductRepository.findAllByDelivery(DeliveryEntityMapper.ModelToEntity(delivery));
+        List<DeliveryProductEntity> deliveryProductEntityList = deliveryProductRepository.findAllByDelivery(DeliveryEntityMapper.ModelToEntity(delivery));
         List<DeliveryProduct> deliveryProducts = new ArrayList<>();
         deliveryProductEntityList.forEach(deliveryProductEntity -> deliveryProducts.add(DeliveryProductEntityMapper.EntityToModel(deliveryProductEntity)));
         return deliveryProducts;

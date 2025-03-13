@@ -64,12 +64,12 @@ public class AddDeliveryController {
         newDeliveryProduct.setDelivery(delivery);
 
         for (DeliveryProduct deliveryProduct : deliveryProducts) {
-                newDeliveryProduct.setPrice((float) (deliveryProduct.getPrice() + price));
-                newDeliveryProduct.setWeight((float) (deliveryProduct.getWeight() + productWeight));
-                repositoryServiceImpl.deleteDeliveryProduct(deliveryProduct.getId());
-                break;
+            newDeliveryProduct.setPrice((float) (deliveryProduct.getPrice() + price));
+            newDeliveryProduct.setWeight((float) (deliveryProduct.getWeight() + productWeight));
+            repositoryServiceImpl.deleteDeliveryProduct(deliveryProduct.getId());
+            break;
         }
-            repositoryServiceImpl.addDeliveryProduct(newDeliveryProduct); // Сохраняем новый продукт
+        repositoryServiceImpl.addDeliveryProduct(newDeliveryProduct); // Сохраняем новый продукт
         if ("addMore".equals(action)) {
             return "redirect:/addDelivery/chooseProduct?deliveryID=" + deliveryID;
         }

@@ -50,11 +50,11 @@
 <div class="wrapper">
     <label>Добавить новую поставку</label>
     <a href="/addDelivery/chooseCompany">
-        <button type="submit" >Добавить поставку</button>
+        <button type="submit">Добавить поставку</button>
     </a>
     <label>Создать отчет за период</label>
     <a href="/chooseInfoForReport">
-        <button type="submit" >Создать отчет</button>
+        <button type="submit">Создать отчет</button>
     </a>
     <label>Добавить поставщика</label>
     <a href="/addSupplier">

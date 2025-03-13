@@ -14,17 +14,16 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(AbstractHttpConfigurer::disable) // Отключаем CSRF
+                .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/home", "/login","/addDelivery/*","/chooseInfoForReport","/chooseInfoForReport/report").permitAll() // Доступ к этим страницам без авторизации
-                        .anyRequest().authenticated() // Все остальные страницы требуют аутентификацию
+                        .requestMatchers("/home", "/login", "/addDelivery/*", "/chooseInfoForReport", "/chooseInfoForReport/report").permitAll()
+                        .anyRequest().authenticated()
                 ).formLogin(form -> form
-                        .loginPage("/authentication") // Указываем страницу входа
+                        .loginPage("/authentication")
                         .defaultSuccessUrl("/home")
-                        .permitAll() // Разрешаем доступ к странице входа всем
-                        .failureUrl("/authentication?error=true") // Перенаправление при ошибке входа
+                        .permitAll()
+                        .failureUrl("/authentication?error=true")
                 );
-        // Разрешаем всем пользователям выйти
 
         return http.build();
     }

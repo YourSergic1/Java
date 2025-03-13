@@ -58,16 +58,16 @@
 <body>
 <div class="wrapper">
     <form action="/addSupplier" method="post">
-    <label for="companyName">Введите название компании</label>
-    <input type="text" id="companyName" name="companyName" placeholder="Название компании">
+        <label for="companyName">Введите название компании</label>
+        <input type="text" id="companyName" name="companyName" placeholder="Название компании">
 
-    <label for="companyAddress">Введите адрес компании</label>
-    <input type="text" id="companyAddress" name="companyAddress" placeholder="Адрес компании">
+        <label for="companyAddress">Введите адрес компании</label>
+        <input type="text" id="companyAddress" name="companyAddress" placeholder="Адрес компании">
 
-    <label for="companyPhone">Введите телефон компании</label>
-    <input type="text" id="companyPhone" name="companyPhone" placeholder="Телефон компании">
+        <label for="companyPhone">Введите телефон компании</label>
+        <input type="text" id="companyPhone" name="companyPhone" placeholder="Телефон компании">
 
-    <button type="submit">Сохранить</button>
+        <button type="submit">Сохранить</button>
     </form>
     <a href="/home">
         <button type="submit" class="back">Назад</button>

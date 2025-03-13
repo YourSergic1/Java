@@ -12,6 +12,7 @@ public class SupplierDtoMapper {
         supplierDto.setPhone(supplier.getPhone());
         return supplierDto;
     }
+
     public static Supplier DtoToModel(SupplierDto supplierDto) {
         Supplier supplier = new Supplier();
         supplier.setId(supplierDto.getId());

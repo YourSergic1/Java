@@ -1,4 +1,4 @@
-package com.github.YourSergic1.datasource.model;
+package com.github.YourSergic1.domain.model;
 
 import jakarta.persistence.Id;
 import lombok.Getter;
@@ -18,5 +18,5 @@ public class Report {
     LocalDate startDate;
     LocalDate endDate;
     String companyName;
-    Map<String, float[]> products=new HashMap<>();
+    Map<String, float[]> products = new HashMap<>();
 }

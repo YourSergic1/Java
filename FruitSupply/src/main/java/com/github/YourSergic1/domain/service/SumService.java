@@ -1,10 +1,9 @@
 package com.github.YourSergic1.domain.service;
 
-import com.github.YourSergic1.datasource.model.Report;
+import com.github.YourSergic1.domain.model.Report;
 import com.github.YourSergic1.datasource.service.RepositoryServiceImpl;
 import com.github.YourSergic1.domain.model.Delivery;
 import com.github.YourSergic1.domain.model.DeliveryProduct;
-import com.github.YourSergic1.domain.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +18,7 @@ public class SumService {
         this.repositoryService = repositoryService;
     }
 
-    public Report sum(List<Delivery> deliveries){
+    public Report sum(List<Delivery> deliveries) {
         List<DeliveryProduct> allDeliverProducts = new ArrayList<>();
         for (Delivery delivery : deliveries) {
             allDeliverProducts.addAll(repositoryService.findDeliveryProductsByDelivery(delivery));
@@ -36,11 +35,11 @@ public class SumService {
         }
         for (DeliveryProduct deliveryProduct : allDeliverProducts) {
             String name = deliveryProduct.getProduct().getName();
-            float[] mem=report.getProducts().get(name);
-            float[] res= new float[2];
-            res[0]=deliveryProduct.getWeight()+mem[0];
-            res[1]=deliveryProduct.getPrice()+mem[1];
-            report.getProducts().put(name,res);
+            float[] mem = report.getProducts().get(name);
+            float[] res = new float[2];
+            res[0] = deliveryProduct.getWeight() + mem[0];
+            res[1] = deliveryProduct.getPrice() + mem[1];
+            report.getProducts().put(name, res);
         }
         return report;
     }

@@ -1,6 +1,5 @@
 package com.github.YourSergic1.web.controller;
 
-import com.github.YourSergic1.datasource.model.SupplierEntity;
 import com.github.YourSergic1.datasource.service.RepositoryServiceImpl;
 import com.github.YourSergic1.domain.model.Product;
 import com.github.YourSergic1.domain.model.Supplier;
@@ -30,7 +29,7 @@ public class AddProductController {
                              @RequestParam String productName,
                              @RequestParam float productPrice) {
         Supplier supplier = repositoryServiceImpl.getSupplier(companyName);
-        Product product = new Product(UUID.randomUUID(),productName, productType, productPrice, supplier.getId());
+        Product product = new Product(UUID.randomUUID(), productName, productType, productPrice, supplier.getId());
         repositoryServiceImpl.addProduct(product);
         return "home";
     }

@@ -24,7 +24,7 @@ public class AddSupplierController {
     public String addSupplier(@RequestParam String companyName,
                               @RequestParam String companyAddress,
                               @RequestParam String companyPhone) {
-        Supplier supplier = new Supplier(UUID.randomUUID(),companyName ,companyAddress,companyPhone);
+        Supplier supplier = new Supplier(UUID.randomUUID(), companyName, companyAddress, companyPhone);
         repositoryServiceImpl.addSupplier(supplier);
         return "home";
     }

@@ -12,6 +12,7 @@ public class DeliveryDtoMapper {
         deliveryDto.setSupplier(delivery.getSupplier());
         return deliveryDto;
     }
+
     public static Delivery dtoToModel(DeliveryDto deliveryDto) {
         Delivery delivery = new Delivery();
         delivery.setId(deliveryDto.getId());
