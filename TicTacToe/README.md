@@ -2,34 +2,28 @@
 
 **A classic strategy game with artificial intelligence and online multiplayer mode**  
 
-![Tic-tac-toe game board](https://example.com/path-to-your-screenshot.png)  
-*Example game interface*  
+![Tic-tac-toe game](img/game.jpg)   
 
 ## 🌟 About the Project  
 
-A full-fledged web implementation of the legendary game with enhanced functionality:  
+A full-fledged web implementation of the legendary Tic-Tac-Toe game with enhanced functionality:  
 - Educational project for [School 21](https://21-school.ru/)  
 - Modern approach to the classic logic game  
 - Dual mode: play against AI or a live opponent  
 - Statistics system and leaderboard  
-
-> "Simple rules—deep strategy" — the perfect playground for studying algorithms and networking  
 
 ## 🚀 Key Features  
 
 ### 🔥 Core Functionality  
 | Feature | Description |  
 |---------|------------|  
-| 🤖 Play vs. AI | Smart bot with Minimax algorithm (unbeatable mode) |  
+| 🤖 Play vs AI | Smart bot with Minimax algorithm (unbeatable mode) |  
 | 👥 Online PvP | Two-player mode over the internet |  
 | 📊 Game History | Archive of all completed matches with filtering |  
 | 🏆 Leaderboard | Player rankings based on wins |  
 | 👤 Player Profile | Personal stats and achievements |  
 
 ### ✨ Additional Features  
-- Responsive design for all devices  
-- Move and victory animations  
-- Customizable player nicknames  
 - Account deletion option  
 
 ## ⚙️ Tech Stack  
@@ -46,12 +40,9 @@ A full-fledged web implementation of the legendary game with enhanced functional
 
 **Infrastructure:**  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)  
 
 ## 🎥 Video Demo  
 
-[![Gameplay video](https://i.imgur.com/thumbnail1.jpg)](https://youtu.be/link1)  
+ou can watch the demo by clicking on the image below:  
 
-*Clickable previews:*  
-[![AI Gameplay](https://i.imgur.com/thumbnail1.jpg)](https://youtu.be/link1)  
-[![Online Mode](https://i.imgur.com/thumbnail2.jpg)](https://youtu.be/link2)  
+[![Demo Video](img/home.jpg)](https://youtu.be/lpMC21fVEAg)
