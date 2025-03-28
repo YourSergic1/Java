@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'TildaSans', Arial, sans-serif;
+    background-color: rgb(174, 136, 1);
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    margin: 0;
+}
+
+button {
+    text-align: center;
+    color: white; /* Белый текст */
+    border: 2px solid white; /* Белая обводка */
+    background: transparent; /* Прозрачный фон */
+    padding: 10px 20px; /* Отступы */
+    font-size: 2rem; /* Размер текста */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: 0.3s; /* Плавный переход */
+    position: absolute;
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}
+
+.delete:hover {
+    background: red; /* Белый фон при наведении */
+    color: black; /* Черный текст при наведении */
+}
+
+.exit {
+    top: 76%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.exit:hover, .back:hover {
+    background: white; /* Белый фон при наведении */
+    color: black; /* Черный текст при наведении */
+}
+
+.delete {
+    top: 60%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.back {
+    top: 68%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+p {
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem; /* Размер шрифта (по желанию) */
+    width: 40%;
+    line-height: 1.5;
+}
+
+.id {
+    position: absolute;
+    top: 20%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}
+
+.allGames {
+    position: absolute;
+    top: 23%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}
+
+.wins {
+    position: absolute;
+    top: 26%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}
+
+.loses {
+    position: absolute;
+    top: 29%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}
+
+.draws {
+    position: absolute;
+    top: 32%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}

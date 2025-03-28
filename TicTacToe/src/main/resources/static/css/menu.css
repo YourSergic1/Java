@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'TildaSans', Arial, sans-serif;
+    background-color: rgb(174,136,1);
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    margin: 0;
+}
+
+button {
+    text-align: center;
+    color: white; /* Белый текст */
+    border: 2px solid white; /* Белая обводка */
+    background: transparent; /* Прозрачный фон */
+    padding: 10px 20px; /* Отступы */
+    font-size: 2rem; /* Размер текста */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: 0.3s; /* Плавный переход */
+    position: absolute;
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}
+
+button:hover {
+    background: white; /* Белый фон при наведении */
+    color: black; /* Черный текст при наведении */
+}
+
+.newGameWithComputer {
+    top: 15%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.newGameWithHuman {
+    top: 25%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.chooseGameWithHuman {
+    top: 35%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.allGamesWithComputer {
+    top: 45%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.allGamesWithHuman {
+    top: 55%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.allEndedGames{
+    top: 65%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.scoreBoard {
+    top: 75%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}
+
+.profile {
+    top: 85%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+}

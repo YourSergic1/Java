@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'TildaSans', Arial, sans-serif;
+    background-color: rgb(174, 136, 1);
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    margin: 0;
+}
+h1 {
+    font-weight: 300;
+    position: absolute;
+    top: 5%; /* Центрируем текст по вертикали */
+    left: 50%; /* Центрируем текст по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+    text-align: center;
+    color: white;
+    font-size: 2rem; /* Размер шрифта (по желанию) */
+    z-index: 2; /* Текст будет поверх затемняющего слоя */
+    width: 40%;
+    line-height: 1.5;
+}
+
+button{
+    text-align: center;
+    color: white; /* Белый текст */
+    border: 2px solid white; /* Белая обводка */
+    background: transparent; /* Прозрачный фон */
+    padding: 10px 20px; /* Отступы */
+    font-size: 2rem; /* Размер текста */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: 0.3s; /* Плавный переход */
+    position: absolute;
+    transform: translate(-50%, -50%); /* Сдвигаем на 50% по обоим осям для точного центрирования */
+}
+
+table {
+    position: absolute;
+    top: 20%; /* Фиксированный отступ сверху в пикселях */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Сдвигаем на 50% по горизонтали для центрирования */
+    width: 80%;
+    border-collapse: collapse; /* Убирает двойные границы между ячейками */
+    color: white;
+    font-size: 1.5rem; /* Размер шрифта (по желанию) */
+    line-height: 1.5;
+}
+
+th, td {
+    border: 1px solid white; /* Устанавливает белую границу */
+    padding: 8px; /* Отступы внутри ячеек */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+
+.back {
+    top: 5%; /* Центрируем текст по вертикали */
+    left: 5%; /* Центрируем текст по горизонтали */
+}
+
+.back:hover {
+    background: white; /* Белый фон при наведении */
+    color: black; /* Черный текст при наведении */
+}
+
+.number{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem; /* Размер шрифта (по желанию) */
+    z-index: 2; /* Текст будет поверх затемняющего слоя */
+    line-height: 1.5;
+}
+
+.limit{
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+    background-color: #f8f8f8;
+    min-width: 120px;
+    cursor: pointer;
+}
