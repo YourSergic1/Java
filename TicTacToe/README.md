@@ -45,4 +45,4 @@ A full-fledged web implementation of the legendary Tic-Tac-Toe game with enhance
 
 ou can watch the demo by clicking on the image below:  
 
-[![Demo Video](img/home.jpg)](https://youtu.be/iONXo6Msiv4)
+[![Demo Video](img/home.jpg)](https://youtu.be/lpMC21fVEAg)
