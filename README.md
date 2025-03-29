@@ -1,40 +1,71 @@
-<div id="header" align="center">
+<div align="center">
    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGgwam9ibXQ4cWs2OWt6ZzdweG41c21mZDBkd2JkZWd0ZWJidHk5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif" width="400"/>
 </div>
 
-<h4 align="left">Описание:</h4>
+## Description
 
-В данном репозиторие вы сможете ознакомиться со всеми проектами, реализованными мной в "School21 by Sber" на языке программирования Java.  
+This repository showcases all projects I implemented using **Java**.
 
-<h4 align="left">Сюда входят аткие проекты как:</h4>
+## Projects
 
-- Java01 - день 1 в бассейне Java в школе 21.  
-   Изученные темы:
-   - Точка входа в программу, структура программы;
-   - Компиляция/интерпретация программы;
-   - Управляющие структуры языка (следование, ветвление, повторение);
-   - Простые типы данных (назначение, размер, представление в памяти, операции);
-   - Составные типы данных (назначение, размер, представление в памяти, операции);
-   - Организация ввода-вывода (stdin-stdout);
-   - Автоматическая, статическая и динамическая память, сборщик мусора;
-   - Сложные структуры данных (шаблоны и дженерики).
-- Java02 - день 2 в бассейне Java в школе 21.
-  Изученные темы:
-  - ООП/процедурный/мультипарадигмальный подход в Java;
-   - Отличия от C и C++;
-   - Функциональная парадигма;
-   - Асинхронное/параллельное программирование;
-- Rogue1970 - день 3 в бассейне Java в школе 21 (групповой проект).  
-   - Реализация простой версии консольный игры Rogue 1980 с помощью jcurses.
-- TicTacToe - день 4 в бассейне Java в школе 21.
-  Изученные темы:
-  - Веб-приложение;
-   - Spring (Spring Boot + Работа с бинами+ работа с контроллерами + работа с шаблонизатором и т.д.);
-   - API;
-   - Алгоритм «Минимакс»;
-   - MVC.
-- FruitsSupply - реализация веб приложения, для учета поставщиков и их товаров, создание отчета по поставщикам за период времени.
- Изученные темы:
-  - Веб-приложение;
-   - Spring (Spring Boot + Работа с бинами+ работа с контроллерами + работа с шаблонизатором и т.д.);
+### Java01  
+📚 **Topics covered:**
+- Program entry point and structure
+- Compilation/interpretation
+- Control structures (sequence, branching, loops)
+- Primitive and composite data types
+- I/O operations (stdin/stdout)
+- Memory management (automatic, static, dynamic)
+- Garbage collection
+- Data structures (templates and generics)
 
+---
+
+### Java02
+🚀 **Topics covered:**
+- OOP vs procedural programming
+- Differences from C/C++
+- Functional programming
+- Asynchronous/parallel programming
+
+---
+
+### Rogue1980 
+**Console Application**  
+🎮 Implemented a simplified console version of Rogue (1980) using jcurses
+
+**Technologies used:**
+- Jcurses
+- OOP
+
+---
+
+### TicTacToe
+**Web Application**  
+🎮 Implemented a Tic-Tac-Toe game.
+
+**Technologies used:**
+- Spring Boot framework
+- Sprring Security
+- Spring JPA
+- Bean management
+- Controller implementation
+- Templating engine
+- Minimax algorithm
+- Data processing
+- MVC architecture
+
+---
+
+### FruitsSupply
+**Web Application**  
+🛒 Supplier and product management system with time-period reporting
+
+**Technologies used:**
+- Spring Boot framework
+- Sprring Security
+- Spring JPA
+- Bean management
+- Controller implementation
+- Templating engine
+- Data processing
