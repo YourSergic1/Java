@@ -8,6 +8,24 @@ This repository showcases all projects I implemented using **Java**.
 
 ## Projects
 
+### Rogue1980 
+**Console Application**  
+🎮 Implemented a simplified console version of Rogue (1980) using jcurses
+
+---
+
+### TicTacToe
+**Web Application**  
+🎮 Implemented a Tic-Tac-Toe game.
+
+---
+
+### FruitsSupply
+**Web Application**  
+🛒 Supplier and product management system with time-period reporting
+
+---
+
 ### Java01  
 📚 **Topics covered:**
 - Program entry point and structure
@@ -29,43 +47,3 @@ This repository showcases all projects I implemented using **Java**.
 - Asynchronous/parallel programming
 
 ---
-
-### Rogue1980 
-**Console Application**  
-🎮 Implemented a simplified console version of Rogue (1980) using jcurses
-
-**Technologies used:**
-- Jcurses
-- OOP
-
----
-
-### TicTacToe
-**Web Application**  
-🎮 Implemented a Tic-Tac-Toe game.
-
-**Technologies used:**
-- Spring Boot framework
-- Sprring Security
-- Spring JPA
-- Bean management
-- Controller implementation
-- Templating engine
-- Minimax algorithm
-- Data processing
-- MVC architecture
-
----
-
-### FruitsSupply
-**Web Application**  
-🛒 Supplier and product management system with time-period reporting
-
-**Technologies used:**
-- Spring Boot framework
-- Sprring Security
-- Spring JPA
-- Bean management
-- Controller implementation
-- Templating engine
-- Data processing
