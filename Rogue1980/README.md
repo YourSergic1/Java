@@ -21,7 +21,7 @@ A full-fledged web implementation of the legendary Rogue1980 game:
 | 🏃 Conquer dungeons | Explore dungeons that are randomly generated |  
 | 🔨 Upgrade weapon | Upgrade your weapons to defeat enemies more easily |
 | 🍺 Look for boosts | Hunt for boosters that will bring unexpected twists to your game |
-| 🏆 Leaderboard | Compete for a spot on the leaderboard |  
+| 🏆 Game history | Check your progress |  
 
 ### ✨ Additional Features  
 - Save system – resume your game without losing progress (automatic saving) 
