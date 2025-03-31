@@ -44,3 +44,10 @@ You can watch the demo by clicking on the image below:
 <a href="https://youtu.be/Fzwm2H-8l5U" target="_blank">
   <img src="img/home.jpg" alt="Demo Video" style="width:400px; max-width:100%; border:1px solid #ddd; border-radius:8px;">
 </a>
+
+You can watch the demo2 by clicking on the image below:  
+
+<a href="https://youtu.be/Fzwm2H-8l5U" target="_blank">
+  <img src="img/code.jpg" alt="Demo Video" style="width:400px; max-width:100%; border:1px solid #ddd; border-radius:8px;">
+</a>
+
