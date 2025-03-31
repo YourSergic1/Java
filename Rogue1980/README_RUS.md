@@ -44,3 +44,9 @@
 <a href="https://youtu.be/Fzwm2H-8l5U" target="_blank">
   <img src="img/home.jpg" alt="Демонстрация игры" style="width:400px; max-width:100%; border:1px solid #ddd; border-radius:8px;">
 </a>
+
+Демо-ролик 2 можно посмотреть, кликнув на изображение ниже::  
+
+<a href="https://youtu.be/bTqoIWAK8sw" target="_blank">
+  <img src="img/code.jpg" alt="Demo Video" style="width:400px; max-width:100%; border:1px solid #ddd; border-radius:8px;">
+</a>
