@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: urman-agreement
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+telegrambot:
+  username: UrmanAgreementBot
+  token: 8405419869:AAEn9lGZ82ywGpWqYZplcbuISNmf4_WIp2U
+app:
+  api:
+    url: http://localhost:8080/agreement/create
