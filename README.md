@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGgwam9ibXQ4cWs2OWt6ZzdweG41c21mZDBkd2JkZWd0ZWJidHk5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SXxI9NlwvYiY3bRsck/giphy.gif" width="400"/>
+   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHlzbzIwbW0wbTQzOWNnZHN0eGJnMmR1cDl5cXZuOTg3OWplNnV6NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mEhPCIDM2bTrl0XKTG/giphy.gif" width="400"/>
 </div>
 
 ## Description
@@ -45,5 +45,11 @@ This repository showcases all projects I implemented using **Java**.
 - Differences from C/C++
 - Functional programming
 - Asynchronous/parallel programming
+
+---
+
+### pdf_configurator
+
+Word document creating bot.
 
 ---
